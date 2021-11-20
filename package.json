@@ -1,6 +1,6 @@
 {
   "name": "zfer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A url-safe data encoder and decoder with compression.",
   "engines": {
     "node": ">= 12",
@@ -44,5 +44,13 @@
     "@msgpack/msgpack": "^2.7.1",
     "base-x": "^3.0.9",
     "pako": "^2.0.4"
+  },
+  "homepage": "https://github.com/acorcutt/zfer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acorcutt/zfer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acorcutt/zfer/issues"
   }
 }
