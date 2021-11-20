@@ -1,0 +1,48 @@
+{
+  "name": "zfer",
+  "version": "0.0.1",
+  "description": "A url-safe data encoder and decoder with compression.",
+  "engines": {
+    "node": ">= 12",
+    "pnpm": ">= 3"
+  },
+  "type": "module",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "browser": "dist/index.cjs.js",
+  "targets": {
+    "browser": {
+      "context": "browser",
+      "includeNodeModules": true,
+      "optimize": true
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "ava",
+    "watch:test": "ava --watch",
+    "watch:build": "parcel watch",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "url",
+    "compact",
+    "data",
+    "transfer",
+    "compression"
+  ],
+  "author": "Anthony Corcutt",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "^2.7.1",
+    "base-x": "^3.0.9",
+    "pako": "^2.0.4"
+  }
+}
